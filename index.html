@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Khoa hoc code</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div>
+        <!--
+        <tên_thẻ thuộc_tinh1="giá trị" thuộc_tình="giá trị"> Nội dung </tên_thẻ> 
+        <p></p>: xác định 1 đoạn văn bản
+        <b></b>: in đậm
+        <i></i>: in nghiêng
+        <u></u>: gạch chân
+        <br/>: xuống dòng
+        <center></center>: căn giữa
+        <hr>: đường kẻ ngang
+    -->
+        <style>
+            h1 {
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+        <p>
+        <h1 style="color: darkcyan">
+            Bill Gates nói xe tự lái 'cách mạng như PC'
+        </h1>
+        Sau khi trải nghiệm, tỷ phú Mỹ <a href="https://vi.wikipedia.org/wiki/Bill_Gates"><u>Bill gates</u></a> đánh giá
+        ôtô
+        tự lái là sản phẩm thay đổi thế giới giống như máy tính cá nhân.
+        <br />
+        <br />
+        Trong bài viết trên blog cuối tháng 3, Bill Gates, nhà đồng sáng lập Microsoft, cho rằng lĩnh vực xe tự lái đã
+        chớm
+        nở, đồng thời dự đoán công nghệ và loại xe này sẽ đạt đến "điểm bùng phát" trong thập kỷ tới.
+        <br />
+        <br />
+        "Khi điều đó xảy ra, xe tự lái sẽ thay đổi thói quen phương tiện giao thông một cách đáng kể, như PC từng thay
+        đổi
+        công việc văn phòng", ông viết.
+        </p>
+        <br />
+        <br />
+        <div class="anh_billgates">
+            <img src="https://i1-sohoa.vnecdn.net/2023/04/01/maxresdefault-3061-1680361980.png?w=680&h=0&q=100&dpr=1&fit=crop&s=dweuouyRtb0kUKtK2Om_Cw"
+                alt="ảnh Bill Gates" />
+        </div>
+        <!--
+        thẻ tạo nội dung
+        <ol>: order list -> được tự động đánh số 1,2,3... -> chỉnh: <ol type="a,A,i,1,.."> </ol>
+            <li> </li>
+        </ol>
+
+        <ul>: unorder list -> được tự động đánh . -> chỉnh: <ul type="circle, disc, square..."> </ul>
+            <li> </li>
+        </ul>
+    -->
+        <ul type="circle"> G.O.A.T
+            <li>Cristiano Ronaldo</li>
+            <li>Leneo Messi</li>
+        </ul>
+        <!-- 
+        tạo bảng
+    <table border="1">
+        <caption style="caption-side: top">BẢNG DỮ LIỆU</caption>: tạo tiêu đề cho bảng
+        <tr>
+            <th></th>
+            <th>Cột 1</th> : tạo tiêu đề cột
+            <th>Cột 2</th>
+            <th>Cột 3</th>
+        </tr>
+
+        <tr>: tạo dòng (table row)
+            <th>Dòng 1</th>  : tạo tiêu đề dòng
+            <td>C1</td>: tạo cột (table data)
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+        <tr>
+            <th>Dòng 2</th>
+            <td>Abc1</td>
+            <td>Abc2</td>
+            <td>Abc3</td>
+        </tr>
+        <tr>
+            <th>Dòng 3</th>
+            <td>Abc4</td>
+            <td>Abc5</td>
+            <td>Abc6</td>
+        </tr>
+    </table>
+    * Nếu muốn nhóm các dòng đánh dấu là phần đầu của các cột thì dùng thẻ <thead>
+    ý nghĩa tương tứ nhóm dòng là phần cuối của cột dùng thẻ <tfoot>
+     -->
+
+        <table border="1px">
+            <caption style="caption-side: top">BẢNG DỮ LIỆU</caption>
+            <thead style="background: yellow">
+                <tr>
+                    <th></th>
+                    <th>Cột 1</th>
+                    <th>Cột 2</th>
+                    <th>Cột 3</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Dòng 1</th>
+                <td>STT</td>
+                <td>MSSV</td>
+                <td>Họ tên</td>
+            </tr>
+            <tr>
+                <th>Dòng 2</th>
+                <td>1</td>
+                <td>Hồ Đoàn Minh Khoa</td>
+                <td>SE171553</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3"><b>Tổng sĩ số lớp</b></td>
+                    <td colspan="1">1</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br />
+        <!--
+        Chèn video/âm thanh
+        <video controls>
+        <source src="../file/bunny.mp4">
+        </video>
+    -->
+        <!-- <video controls="controls">
+        <source src="../スパークル [original ver.] -Your name. Music Video edition- 予告編 from new album「人間開花」初回盤DVD.mp4">
+    </video> -->
+        <br />
+        <!-- <input type="text" -> nhập chữ
+        type="radio" -> tich vào ô tròn
+        type="checkbox" -> tích vào ô vuông
+    -->
+        <input type="text">
+        <p>Who is best player in the world?</p>
+        <input name="gender" type="radio"> Ronaldo
+        <br />
+        <input name="gender" type="radio"> Messi
+        <br />
+        <input name="gender" type="radio"> Kroos
+        <br />
+        <!-- <button></button> -->
+        <button><a href="https://ih1.redbubble.net/image.2009108506.1633/st,small,507x507-pad,600x600,f8f8f8.jpg"
+                style="color: purple; text-decoration: none;">Đăng
+                ký</a></button>
+
+
+    </div>
+
+    <p id="p1">Đoạn văn 1</p>
+    <p id="p2">Đoạn văn 3</p>
+    <p class="p3 p2">Đoạn văn 2</p>
+    <p class="p4">Đoạn văn 2</p>
+
+    <!-- /* Lựa chọn toàn bộ các thẻ */
+* {
+    /* `font-style: italic` là chữ nghiêng */
+    font-style: italic;
+}
+
+/* Lựa chọn toàn bộ các thẻ p */
+p {
+    /* `text-decoration: underline` là chữ gạch chân */
+    text-decoration: underline;
+}
+
+/* Lựa chọn toàn bộ các thẻ có class-1 */
+.class-1 {
+    color: red;
+}
+
+/* Lựa chọn toàn bộ thẻ đồng thời có cả class-2 và class-3 */
+.class-2.class-3 {
+    color: green;
+}
+
+/* Lựa chọn thẻ có class-5 là con của thẻ class-4 */
+.class-4 .class-5 {
+    color: violet;
+}
+
+/* Lựa chọn toàn bộ các thẻ p có class-6 */
+p.class-6 {
+    color: blue;
+}
+
+/* Lựa chọn toàn bộ các thẻ h3, h4 */
+h3, h4 {
+    color: brown;
+}
+
+/* Lựa chọn toàn bộ thẻ li là con của class list */
+.list li {
+    color: deepskyblue;
+}
+
+/* Lựa chọn toàn bộ thẻ li là con trực tiếp của thẻ có class list */
+.list > li {
+    color: fuchsia;
+}
+
+/* Lựa chọn 1 thẻ p đứng liền kề sau class-9 */
+.class-9 + p {
+    color: goldenrod;
+}
+
+/* Lựa chọn toàn bộ thẻ p đứng sau class-10 */
+.class-10 ~ p {
+    color: limegreen;
+}
+
+
+
+/**
+* Các bạn chưa cần học phần dưới này, đây là
+* CSS selectors nâng cao, mình sử dụng để
+* hiển thị tên class bên cạnh mỗi đoạn văn
+* trên giao diện.
+*/
+[class]::after {
+    /* Bạn có thể comment dòng dưới đây để biết tác dụng của nó */
+    content: " ("  attr(class) ")";
+} -->
+
+    <div>
+        <table border="1px">
+            <tr style="background-color: rgb(33, 116, 226);">
+                <td colspan="2">The Price list of tours</td>
+            </tr>
+            <tr>
+                <td>TPHCM - Mui Ne</td>
+                <td>100$</td>
+            </tr>
+            <tr>
+                <td>TPHCM - Ca Mau</td>
+                <td>150$</td>
+            </tr>
+            <tr>
+                <td>TPHCM - Vung Tau</td>
+                <td>90$</td>
+            </tr>
+            <tr>
+                <td>TPHCM - Da Lat</td>
+                <td>120$</td>
+            </tr>
+            <tr>
+                <td>TPHCM - Ho Tram</td>
+                <td>110$</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
